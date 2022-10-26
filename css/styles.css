@@ -262,7 +262,13 @@ header {
     overflow: hidden;
 }
 
-
+.area {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;    
+    background: #F5F4FA;
+    border-radius: 4px;
+}
 
 .adv {
     display: flex;
@@ -404,11 +410,46 @@ header {
 
 .position {
     text-align: center;
-
     font-size: 16px;
     line-height: 1.19;
+    margin-bottom: 16px;
 
     color: var(--secondary-text-color);
+}
+.social {
+    display: flex;
+    width: 206px;
+    height: 44px;
+    outline: 1px solid #000000;
+}
+
+/*SECTION REGULAR CUSTOMERS */
+
+.regular-customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.customers-title {
+    text-align: center;
+    height: 42px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17
+}
+.customers {
+    display: flex;
+} 
+.client {
+    display: block;
+    width: 170px;
+    height: 92px;
+        
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.client:not(:last-child) {
+    margin-right: 30px;
 }
 
 /* FOOTER */
@@ -423,7 +464,11 @@ footer {
 
 
 .foot {
+    display: flex;
+}
+.place {
     display: block;
+    margin-right: 70px;
 }
 
 address {
@@ -466,7 +511,26 @@ address {
 .footer-last {
     color: var(--secondary-color);
 }
-
+.socialcont {
+    display: block;
+    
+    
+}
+.find-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+} 
+.socialize { 
+    display: flex;
+    width: 206px;
+    height: 44px;
+    outline: 1px solid #ffffff;
+}
 
 
 /* SECOND PAGE STYLES */
