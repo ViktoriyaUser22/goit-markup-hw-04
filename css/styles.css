@@ -145,12 +145,28 @@ header {
 }
 
 .link-header {
-    display: block;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
     margin-left: 340px;
 
 }
+.icon-envelope {
+    display: block;
+    width: 16px;
+    height: 12px; 
+    margin-right: 10px;
+}
+.icon-smartphone {
+    display: block;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
 
 .link-header-mail {
+    display: flex;
+    
     margin-right: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -163,6 +179,7 @@ header {
 }
 
 .link-header-tel {
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     text-decoration: none;
@@ -173,6 +190,15 @@ header {
     color: var(--secondary-text-color);
 
 }
+.icon-envelope:hover,
+.icon-envelope:focus {
+    fill: var(--accent-color);
+}
+.icon-smartphone:hover,
+.icon-smartphone:focus {
+    fill: var(--accent-color);
+}
+
 
 .link-header-mail:hover,
 .link-header-mail:focus {
@@ -187,13 +213,14 @@ header {
 /* HERO */
 
 .hero {
-
+    max-width: 1600;
     height: 600px;
     padding-top: 200px;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: #27303a;
-
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("../images/hero.jpg");
 }
 
 
@@ -263,11 +290,19 @@ header {
 }
 
 .area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;    
     background: #F5F4FA;
     border-radius: 4px;
+}
+.icons {
+    display: block;
+    width: 70px;
+    height: 70px;
 }
 
 .adv {
@@ -416,11 +451,31 @@ header {
 
     color: var(--secondary-text-color);
 }
-.social {
+
+
+.social-links {
     display: flex;
-    width: 206px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.social-net {
+    display: block;
+    width: 44px;
     height: 44px;
-    outline: 1px solid #000000;
+        
+}
+.social-net:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+
+.icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-position: center;
 }
 
 /*SECTION REGULAR CUSTOMERS */
