@@ -6,7 +6,7 @@
     --accent-color: #2196F3;
     --primary-font-family: 'Roboto', sans-serif;
     --logo-font-family: 'Raleway', sans-serif;
-
+    --icons-color: #AFB1B8;
 }
 
 html {
@@ -457,25 +457,30 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     
 }
-.social-net {
-    display: block;
+
+.net {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
-        
+    color: #AFB1B8;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+
 }
-.social-net:not(:last-child) {
-    margin-right: 10px;
+.net:hover,
+.net:focus {
+     color: var(--secondary-color);
+     background-color: var(--accent-color);
 }
-
-
-
 .icon {
-    display: block;
     width: 20px;
     height: 20px;
-    background-position: center;
+    fill: currentColor;
 }
 
 /*SECTION REGULAR CUSTOMERS */
@@ -494,18 +499,30 @@ header {
 }
 .customers {
     display: flex;
+    justify-content: center;
+    gap: 30px;
 } 
 .client {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
-        
-    border: 1px solid #AFB1B8;
+    color: var(--icons-color);
+    background-color: var(--secondary-color);    
+    border: 1px solid var(--icons-color);
     border-radius: 4px;
+    
 }
-.client:not(:last-child) {
-    margin-right: 30px;
+.client:hover,
+.client:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
+.client-logo {
+    fill: currentColor;
+}
+
 
 /* FOOTER */
 
@@ -516,7 +533,9 @@ footer {
     padding-bottom: 60px;
 
 }
-
+.container-foot {
+    align-items: baseline;
+}
 
 .foot {
     display: flex;
@@ -580,11 +599,29 @@ address {
     margin-bottom: 20px;
     color: var(--secondary-color);
 } 
-.socialize { 
+.social-links-infooter { 
     display: flex;
-    width: 206px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.net-infooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
     height: 44px;
-    outline: 1px solid #ffffff;
+    color: var(--secondary-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.net-infooter:hover,
+.net-infooter:focus {
+    background-color: var(--accent-color);
+}
+.icon-infooter {
+    fill: currentColor;
 }
 
 
