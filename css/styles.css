@@ -200,10 +200,6 @@ header {
     color: var(--secondary-text-color);
 
 }
-.link-icon {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
 
 .link-header-mail:hover,
 .link-header-mail:focus {
