@@ -151,13 +151,18 @@ header {
     margin-left: 340px;
 
 }
+.link-header:hover,
+.link-header:focus {
+     color: var(--accent-color);
+}
+
 .icon-envelope {
     display: block;
     align-self: center;
     width: 16px;
     height: 12px; 
     margin-right: 10px;
-    color: var(--secondary-text-color);
+    fill: var(--secondary-text-color);
     
 }
 .icon-smartphone {
@@ -165,7 +170,7 @@ header {
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    color: var(--secondary-text-color);
+    fill: var(--secondary-text-color);
     
 }
 
@@ -175,7 +180,7 @@ header {
     margin-right: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
-
+    
     font-weight: 500;
     text-decoration: none;
     line-height: 1.14;
@@ -189,21 +194,16 @@ header {
     padding-bottom: 32px;
     text-decoration: none;
     font-weight: 500;
-
+    
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
 
 }
-.icon-envelope:hover,
-.icon-envelope:focus {
-    fill: var(--accent-color);
+.link-icon {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
-.icon-smartphone:hover,
-.icon-smartphone:focus {
-    fill: var(--accent-color);
-}
-
 
 .link-header-mail:hover,
 .link-header-mail:focus {
@@ -214,6 +214,17 @@ header {
 .link-header-tel:focus {
     color: var(--accent-color);
 }
+
+.link-header-mail:hover .icon-envelope,
+.link-header-mail:focus .icon-envelope {
+    fill: var(--accent-color);
+}
+
+.link-header-tel:hover .icon-smartphone,
+.link-header-tel:focus .icon-smartphone {
+    fill: var(--accent-color);
+}
+
 
 /* HERO */
 
@@ -268,8 +279,9 @@ header {
 
 .request:hover,
 .request:focus {
-    color: var(--accent-color);
-    background: var(--secondary-color);
+    background: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4));
+            
 }
 
 /* SECTION OUR ADVANTAGES */
@@ -697,9 +709,7 @@ address {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-            0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    
 }
 
 .filter.web {
@@ -728,12 +738,18 @@ address {
 .main:focus {
     color: var(--accent-color);
     background: var(--secondary-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
 }
 
 .filter:hover,
 .filter:focus {
     color: var(--accent-color);
     background: var(--secondary-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
 }
 
 
@@ -754,8 +770,8 @@ address {
     background: var(--secondary-color);
 
 }
-.cont:hover,
-.cont:focus {
+.link-item:hover,
+.link-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
      1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -787,5 +803,6 @@ address {
 }
 
 .link-item {
+    display: block;
     text-decoration: none;
 }
